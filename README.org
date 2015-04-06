@@ -1,0 +1,30 @@
+
+* Титульник для лабораторной в LaTeX
+
+вот такой, немного корявенький, но все же лучше чем ничего титульник. 
+Желательно вставить в преамбулу нечто вроде: 
+
+#+BEGIN_SRC LaTeX
+% чтобы underline переносился...
+\usepackage[normalem]{ulem}
+
+% переменные title
+
+\newcommand{\titlepageChair}{ИВТиИБ}
+\newcommand{\titlepageLabNo}{1}
+\newcommand{\titlepageSubject}{Цифровая обработка сигналов}
+\newcommand{\titlepageLRArticul}{230100.68.11.000 О}
+
+\newcommand{\titlepageLabTitle}{
+  \parbox{14cm}{
+    \center
+    \uline{Работа в среде Matlab. Структура Signal Processing Toolbox. Генерация сигналов. Свертка.}
+  }
+}
+
+\newcommand{\titlepageGroup}{8ИВТ-41}
+\newcommand{\titlepageStudent}{А.Ю. Смолянинов}
+\newcommand{\titlepageTeacherPosition}{доцент, к.т.н.}
+\newcommand{\titlepageTeacher}{А.C. Шатохин}
+
+#+END_SRC
